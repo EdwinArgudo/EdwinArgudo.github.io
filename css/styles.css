@@ -26,8 +26,39 @@ dh-main {
     flex: 1 0 auto;
 }
 
+blockquote {
+    position: relative;
+    padding: 20px;
+}
+
+blockquote:before {
+display: block;
+padding-left: 10px;
+content: "\201C";
+font-size: 80px;
+position: absolute;
+left: -20px;
+top: -20px;
+color: #7a7a7a;
+}
+
+blockquote:after {
+display: block;
+padding-right: 10px;
+content: "\201D";
+font-size: 80px;
+position: absolute;
+right: -20px;
+top: -20px;
+color: #7a7a7a;
+}
+
 .bg-charcoal {
     background-color: var(--dh-charcoal);
+}
+
+.bg-green {
+    background-color: var(--dh-green);
 }
 
 .bg-orange {
